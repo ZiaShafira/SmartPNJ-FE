@@ -1,0 +1,26 @@
+.bg-superdash{
+    background-color:#0F8390;
+  }
+
+.bg-message{
+    background-color:#F2EFE3;
+  }
+
+.avatar-circle {
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
