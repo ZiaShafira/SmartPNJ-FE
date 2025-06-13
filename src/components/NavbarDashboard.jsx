@@ -16,7 +16,7 @@ const NavbarDashboard = () => {
       return;
     }
 
-    fetch("/api/me", {
+    fetch(`${API_BASE}/api/me`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
