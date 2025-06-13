@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
-import ChatMessages from './ChatMessages';
-import ChatInput from './ChatInput';
-import Navbar from './Navbar';
-import Footer2 from './Footer2';
+import ChatMessages from '../components/ChatMessages';
+import ChatInput from '../components/ChatInput';
+import Navbar from '../components/Navbar';
+import Footer2 from '../components/Footer2';
 import './Login.css'; // opsional kalau kamu masih butuh
 
 const Chatbot = () => {
