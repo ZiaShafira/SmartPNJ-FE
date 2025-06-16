@@ -79,7 +79,7 @@ const Login = () => {
           </div>
 
           <div className="mb-4">
-            <label className="form-label text-white">Username</label>
+            <label className="form-label text-white">Password</label>
             <div className="input-group bg-light rounded">
               <input
                 type={showPassword ? "text" : "password"}
