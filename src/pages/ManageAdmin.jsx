@@ -130,7 +130,7 @@ const ManageAdmin = () => {
 
 
   const handleDelete = (id) => {
-    fetch(`/api/users/${id}`, {
+    fetch(`${API_BASE}/api/users/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`
