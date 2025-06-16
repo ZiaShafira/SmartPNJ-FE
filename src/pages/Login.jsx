@@ -80,6 +80,7 @@ const Login = () => {
 
           <div className="mb-4">
             <div className="input-group bg-light rounded">
+              <label className="form-label text-white">Password</label>
               <input
                 type={showPassword ? "text" : "password"}
                 className="form-control px-3 py-2"
