@@ -18,6 +18,12 @@ const ResetPassword = () => {
     e.preventDefault();
     setMessage('');
     setError('');
+
+    if (password.length < 8) {
+    showToast('danger', 'Password harus minimal 8 karakter.');
+    return;
+  }
+  
     setLoading(true);
 
     fetch(`${API_BASE}/api/users/reset-password-email`, {
