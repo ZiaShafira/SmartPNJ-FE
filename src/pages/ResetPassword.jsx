@@ -9,10 +9,15 @@ const ResetPassword = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-
+  const [toast, setToast] = useState({ show: false, type: '', message: '' });
   const query = new URLSearchParams(location.search);
   const token = query.get('token');
   const API_BASE = import.meta.env.VITE_API_URL;
+
+  const showToast = (type, message) => {
+    setToast({ show: true, type, message });
+    setTimeout(() => setToast({ ...toast, show: false }), 4000);
+  };
 
   const handleReset = (e) => {
     e.preventDefault();
@@ -23,7 +28,7 @@ const ResetPassword = () => {
     showToast('danger', 'Password harus minimal 8 karakter.');
     return;
   }
-  
+
     setLoading(true);
 
     fetch(`${API_BASE}/api/users/reset-password-email`, {
