@@ -175,7 +175,7 @@ const BaseKnowledge = () => {
                       <div><small className="text-muted">QA otomatis terindeks</small></div>
                     </td>
                     <td>{file.uploaded_by || "-"}</td>
-                    <td>{new Date(file.uploaded_at).toLocaleString()}</td>
+                    <td>{file.uploaded_at}</td>
                     <td>
                       <button
                         className="btn btn-danger btn-sm"
