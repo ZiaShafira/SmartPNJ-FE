@@ -54,6 +54,12 @@ const ResetPassword = () => {
   return (
     <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center bg-superdash text-white px-3">
       <h1 className="fw-bold mb-4">Reset Password</h1>
+      {toast.show && (
+        <div className={`alert alert-${toast.type} text-center w-100`} style={{ maxWidth: '400px' }}>
+          {toast.message}
+        </div>
+      )}
+
       <form onSubmit={handleReset} className="w-100" style={{ maxWidth: '400px' }}>
         {error && <div className="alert alert-danger text-center">{error}</div>}
         {message && <div className="alert alert-success text-center">{message}</div>}
